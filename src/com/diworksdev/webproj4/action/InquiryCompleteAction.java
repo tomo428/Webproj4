@@ -5,13 +5,12 @@ import java.util.List;
 
 import com.diworksdev.webproj4.dao.InquiryCompleteDAO;
 import com.diworksdev.webproj4.dto.InquiryDTO;
+import com.opensymphony.xwork2.ActionSupport;
 
-
-public class InquiryCompleteAction {
+public class InquiryCompleteAction extends ActionSupport {
 	private String name;
 	private String qtype;
 	private String body;
-
 	private List<InquiryDTO> inquiryDTOList = new ArrayList<InquiryDTO>();
 
 	public String execute() {
